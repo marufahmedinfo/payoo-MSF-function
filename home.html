@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payoo MSF function</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <main class="flex justify-center">
+    <div class="mockup-phone">
+      <div class="camera"></div>
+      <div class="display">
+        <div class="artboard artboard-demo phone-3">
+          <!-- acount balance -->
+          <div class="stats shadow">
+            <div class="stat">
+              <div class="stat-title">Total Amount</div>
+              <div id="Amount" class="stat-value">9400</div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <!-- feture start -->
+          <div>
+            <button id="addManey" class="btn btn-lg mr-5">Add Maney</button>
+            <button id="cashOut" class="btn btn-lg">Cash Out</button>
+            <br>
+            <br>
+            <button id="tranjection" class="btn btn-lg">Tranjection</button>
+          </div>
+          <!-- feture end -->
+          <div class="divider"></div>
+          <!-- add maney forn start -->
+          <div id="add-maney-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Amount</span>
+                </label>
+                <input id="input-add-maney" type="text" placeholder="Amount" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin</span>
+                </label>
+                <input id="input-add-maney-pin" type="password" placeholder="Pin Number" autocomplete="off"
+                  class="input input-bordered" required />
+              </div>
+              <div class="form-control mt-6">
+                <button id="add-maney-btn" class="btn btn-primary">Add Maney</button>
+              </div>
+            </form>
+          </div>
+          <!-- add maney forn end -->
+          <!-- cash out Maney form start -->
+          <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Cash Out</span>
+                </label>
+                <input id="input-cash-out" type="text" placeholder="Cash Out Amount" class="input input-bordered"
+                  required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin</span>
+                </label>
+                <input id="input-cash-out-pin" type="password" placeholder="Pin Number" autocomplete="off"
+                  class="input input-bordered" required />
+              </div>
+              <div class="form-control mt-6">
+                <button id="cash-out-btn" class="btn btn-primary">Cash Out</button>
+              </div>
+            </form>
+          </div>
+          <!-- cash out Maney form end -->
+          <!-- tranjection  id start -->
+          <div id="tranjection-id">
+            <h2 class="text-5xl text-center">Tranjection History</h2>
+          </div>
+          <!-- tranjection  id end -->
+           <!-- tranjetion massage start -->
+            <div id="tranjetion-sectin" class="hidden"></div>
+           <!-- tranjetion massage end -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- <script src="js/utilites1.js"></script>
+    <script src="js/addManey1.js"></script> -->
+  <script src="js/utilites2.js"></script>
+  <script src="js/addManey2.js"></script>
+  <script src="js/cashOut.js"></script>
+  <script src="js/fetures.js"></script>
+</body>
+
+</html>
